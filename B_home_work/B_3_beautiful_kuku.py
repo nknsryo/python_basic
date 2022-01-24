@@ -7,6 +7,7 @@ for count_rows in range(1, rows + 1):
         # このやり方方向でうまくいかない
         # if 1 <= counter_response <= 9:
         #     counter_response = int(str(counter_response).rjust(0, 1))
+        #
         # else:
         #     counter_response
         print(f"{count_cullums} ×　{count_rows} = {counter_response.rjust(2)} ｜", end=' ')
