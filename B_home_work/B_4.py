@@ -27,6 +27,7 @@ def main():
             print(weather_information[area_temperature]['station'], end=' ')
         else:
             pass
+        
 
 # Q3. 福岡県の平均気温を計算してください(14.0となればOK)
 
