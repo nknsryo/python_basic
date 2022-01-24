@@ -6,9 +6,9 @@
 import random
 
 
-def dice_random():
+def dice():
     result = random.randint(1, 6)
     return result
 
 
-print(dice_random())
+print(dice())
