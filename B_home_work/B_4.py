@@ -15,7 +15,6 @@ def main():
     ]
 
     # Q1. 全国の平均気温を計算してください(9.5となればOK)_
-    # (1+2+3+4+5+6+7+8)/8
     total_weather = 0
     for area_temperature in range(0, 8):
         total_weather += weather_information[area_temperature]['temperature']
