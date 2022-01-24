@@ -1,1 +1,3 @@
-int_numbers = [1, 5]
+int_numbers = [1, 2, 3, 4, 5]
+
+print(int_numbers)
