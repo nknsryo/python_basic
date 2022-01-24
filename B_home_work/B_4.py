@@ -16,25 +16,18 @@ def main():
 
     # Q1. 全国の平均気温を計算してください(9.5となればOK)_
     # (1+2+3+4+5+6+7+8)/8
-    temperatures = weather_information[0]['temperature']
-    for area_temperature in range(0, 7):
-        total_weather = weather_information[area_temperature]['temperature']
-        # return (total_weather,end=' ')
-        print(total_weather, end=' ')
+    total_weather = 0
+    for area_temperature in range(0, 8):
+        total_weather += weather_information[area_temperature]['temperature']
 
-    # weather_information[0]['temperature']
-    # weather_information[1]['temperature']
-    # weather_information[2]['temperature']
-    # weather_information[3]['temperature']
-    # weather_information[4]['temperature']
-    # weather_information[5]['temperature']
-    # weather_information[6]['temperature']
-    # weather_information[7]['temperature']
-    # 全部足したやつをtempurturesに入れる/8
-    print(temperatures)
+    print(total_weather / 8)
 
-
-# Q2. 大阪府のすべての駅名をカンマ区切りで出力してください( '梅田,大阪,堺' となればOK)
+    # Q2. 大阪府のすべての駅名をカンマ区切りで出力してください( '梅田,大阪,堺' となればOK)
+    for area_temperature in range(0, 8):
+        if weather_information[area_temperature]['prefecture'] == '大阪府':
+            print(weather_information[area_temperature]['station'], end=' ')
+        else:
+            pass
 
 # Q3. 福岡県の平均気温を計算してください(14.0となればOK)
 
