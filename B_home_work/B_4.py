@@ -21,18 +21,26 @@ def main():
 
     print(total_weather / 8)
 
+    print()
     # Q2. 大阪府のすべての駅名をカンマ区切りで出力してください( '梅田,大阪,堺' となればOK)
     for area_temperature in range(0, 8):
-        if weather_information[area_temperature]['prefecture'] == '大阪府' and weather_information[area_temperature][
-            'station'] == '堺':
-            print(weather_information[area_temperature]['station'], end=' ')
+        if weather_information[area_temperature]['prefecture'] == '大阪府' \
+                and weather_information[area_temperature]['station'] == '堺':
+            print(weather_information[area_temperature]['station'])
         elif weather_information[area_temperature]['prefecture'] == '大阪府':
             print(weather_information[area_temperature]['station'] + ",", end=' ')
         else:
             pass
-        
 
-# Q3. 福岡県の平均気温を計算してください(14.0となればOK)
+    print()
+    # Q3. 福岡県の平均気温を計算してください(14.0となればOK)
+    total_weather = 0
+    for area_temperature in range(0, 8):
+        if weather_information[area_temperature]['prefecture'] == '福岡県':
+            total_weather += weather_information[area_temperature]['temperature']
+        else:
+            pass
+    print(total_weather / 2)
 
 
 if __name__ == '__main__':
