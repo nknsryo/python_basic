@@ -19,7 +19,7 @@ def main():
     for area_temperature in range(0, 8):
         total_weather += weather_information[area_temperature]['temperature']
 
-    print(total_weather / 8)
+    print(total_weather / len(range(0, 8)))
 
     print()
     # Q2. 大阪府のすべての駅名をカンマ区切りで出力してください( '梅田,大阪,堺' となればOK)
