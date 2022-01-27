@@ -8,20 +8,7 @@ class MyCounterV2:
         return self.value
 
     def count_up(self):
-        self.value = self.value + 1
-        return self.value
-
-
-class MyCounterV2:
-    def __init__(self, value, step):
-        self.value = value
-        self.step = step
-
-    def value(self):
-        return self.value
-
-    def count_up(self):
-        self.value = self.value + 1 * self.step
+        self.value = self.value + self.step
 
 
 counter1 = MyCounterV2(value=0, step=1)
