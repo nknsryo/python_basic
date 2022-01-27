@@ -33,3 +33,4 @@ print(f"最小値: {sequence_min}")
 
 # 平均値
 print(f"平均値: {total() / len(sequence)}")
+
