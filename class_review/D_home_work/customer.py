@@ -1,4 +1,6 @@
-class full_name:
+class customer:
+    def __str__(self):
+        k
 
 
 ken = Customer(first_name="Ken", family_name="Tanaka")
