@@ -22,7 +22,7 @@ class Customer:
             return 500
 
     def info_csv(self):
-        print(str(self.firstname) + " " + str(self.family_name) + " " + str(self.age) + " " + str(self.entry_fee()))
+        print(f"{self.firstname} {self.family_name}\t{self.age}\t{self.entry_fee()}")
 
 
 # 単一顧客の情報取得をタブ区切りにも対応させてください
